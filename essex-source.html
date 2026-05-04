@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | Essex Barbershop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="generator" content="Square Online">
+    <link rel="shortcut icon" type="image/x-icon" href="/square.ico">
+    <link rel="preload" href="https://cdn3.editmysite.com/app/website/css/site.80dde82e64cd7e8a0309.css" as="style">
+
+    <style>
+        .loading-view {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .loading-container {
+            width: 62px;
+            height: 54px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 12px;
+        }
+
+        @media (min-width: 840px) {
+            .loading-container {
+                width: 72px;
+                height: 54px;
+                grid-gap: 12px;
+            }
+        }
+
+        .dot-container {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#00000020, #000000);
+            /* Base64 encoded simple circle SVG /resources/assets/js/prime/src/site/components/ui/circle.svg */
+            mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-size: 100% auto;
+            -webkit-mask-size: 100% auto;
+            mask-position: bottom;
+            -webkit-mask-position: bottom;
+            animation: loading-view-movement;
+            animation-delay: 0s;
+            animation-duration: 3750ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+        }
+
+        .dot-container:nth-of-type(2) {
+            animation-delay: 130ms;
+        }
+
+        .dot-container:nth-of-type(3) {
+            animation-delay: 260ms;
+        }
+
+        @keyframes loading-view-movement {
+            /* up and down for 3s, stop for 750ms */
+            0%, 27%, 54% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+
+            14%, 41%, 68% {
+                mask-position: top;
+                -webkit-mask-position: top;
+            }
+
+            27%, 54%, 81%, 100% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+        }
+    </style>
+
+            <link rel="manifest" href="/manifest.webmanifest">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="default">
+            <meta name='apple-mobile-web-app-title' content='Essex Barbershop'>
+            <meta name='theme-color' content='#000000'>
+            <meta name='msapplication-TileColor' content='#000000'>
+            <link rel='apple-touch-icon' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/icon_180x180_ios_NjYxNj.png?width=180'>
+            <meta name='msapplication-TileImage' content='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/icon_180x180_ios_NjYxNj.png?width=144'>
+            <link rel='apple-touch-icon' sizes='120x120' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/icon_180x180_ios_NjYxNj.png?width=120'>
+            <link rel='apple-touch-icon' sizes='152x152' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/icon_180x180_ios_NjYxNj.png?width=152'>
+            <link rel='apple-touch-icon' sizes='167x167' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/icon_180x180_ios_NjYxNj.png?width=167'>
+            <link rel='apple-touch-icon' sizes='180x180' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/icon_180x180_ios_NjYxNj.png?width=180'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=750&height=1334&fit=crop' media='(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1242&height=2208&fit=crop' media='(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1125&height=2436&fit=crop' media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=828&height=1792&fit=crop' media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1242&height=2688&fit=crop' media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1170&height=2532&fit=crop' media='(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1284&height=2778&fit=crop' media='(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1536&height=2048&fit=crop' media='(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1620&height=2160&fit=crop' media='(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1668&height=2224&fit=crop' media='(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=1668&height=2388&fit=crop' media='(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)'>
+            <link rel='apple-touch-startup-image' href='/uploads/b/69f8ea10-a61b-11ea-8018-e16bef01aa06/splash_2048x4435_NzI4NT.jpg?width=2048&height=2732&fit=crop' media='(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)'>
+    
+                        
+            
+    
+        <script defer src="https://cdn3.editmysite.com/app/checkout/assets/checkout/system.c3b89b0b94f4ef0671b1.js" data-cookieconsent="ignore"></script>
+    
+    
+        <script type="systemjs-importmap" src="https://cdn3.editmysite.com/app/checkout/assets/checkout/imports.en.aea3933176561e32.js" data-cookieconsent="ignore"></script>
+    
+    
+            <script type="systemjs-importmap" src="https://cdn3.editmysite.com/app/checkout/assets/checkout/locale-imports-map.5f6fbff5dca7e7b9.json" data-cookieconsent="ignore"></script>
+    
+    
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/runtime.215eae77ad495c39612f.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/vue-modules.4a41b3ba298bf4563d97.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/languages/en.2ae83aa2430fd1c03762.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/site.9890e2dac1932b5611b3.js" data-cookieconsent="ignore"></script>
+
+        <meta name="description" content="philly barber philadelphia barbershop fade cut men&#039;s cut haircut clean modern near you">
+    
+    <meta property="og:title" content="Home | Essex Barbershop" />
+                <meta property="og:site_name" content="Essex Barbershop" />
+                <meta property="og:description" content="philly barber philadelphia barbershop fade cut men&#039;s cut haircut clean modern " />
+                    <meta property="og:url" content="https://www.essexbarbershop.com" />
+        <meta property="og:type" content="website" />
+    
+    <script data-cookieconsent="ignore">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    </script>
+
+            
+    
+    <!--square-online-feature-flags-->
+<script type="application/javascript" data-cookieconsent="ignore" data-role="square-online-featureflags">
+    window.__DYNAMIC_BOOTSTRAP__ ??= {};
+
+    Object.assign(window.__DYNAMIC_BOOTSTRAP__, {
+        featureFlags: {"ecom.website.deprecated-layouts":false,"marketing-enable-drive-repeat-purchase-campaign":true,"ecom.website.facebook-food":true,"ecom.website.theme-export":false,"ecom.website.chamber-via-fastly":true,"ecom.square-online-published-catalog-cache-version":"2026-03-25","ecom.checkout.open_tabs":true,"ecom.website.photo-reviews":true,"ecom.checkout.cmi-sentry-integration":true,"ecom.checkout.cmi.bootstrap-tracking-snowplow":true,"ecom.checkout.cmi.bootstrap-tracking-ga":true,"ecom.website.order-confirmation-page.website-redirect":true,"ecom.checkout.cmi.locale-view-splitting":true,"ecom.checkout.open_tabs_gc_coupon":true,"ecom.cmi-cart":true,"ecom.checkout.cmi.theme-fonts":false,"ecom-fulfillment-api-v-2":false,"ecom.omnichannel-discounts-frontend":true,"ecom.omnichannel-discounts-category-api":false,"ecom-improved-tipping-experience":true,"ecom.splash.loyalty":true,"ecom.website.published-site.datadog-rum":true,"ecom.website.editor.datadog-rum":true,"ecom-website-published-site-datadog-rum-bot-filter":true,"ecom-use-tracking-inventory":false,"ecom.image-controls.width-fix":true,"ecom.gradient-backgrounds":true,"ecom.website.form-fraud-blocking":true,"ecom.website.form-fraud-auto-ban":true,"ecom.website.code-editor":false,"ecom.shopping.pdp-layouts-m1":true,"ecom.chamber.subscriptions":true,"ecom.tuba.subscriptions-paid-shipping-rates":true,"ecom-cko-enhanced-logging":true,"ecom-cko-unified-logging":true,"ecom.shopping.so-coupons-sunset-integrations":true,"ecom.order-online-text-layouts":true,"ecom.appointment-improvements":true,"ecom.appointment-improvements-m2":true,"ecom.tuba.committed-inventory-m1":true,"ecom.splash-improvements":true,"ecom-themes-onboarding":true,"ecom.shopping.featured-categories-paid-layouts":true,"ecom.website.ai-text.short-form":true,"ecom.website.ai-text.long-form":true,"ecom.website.metered-request.override":false,"ecom.website.async-create-theme":false,"ecom.can_use_cart_sharing":true,"ecom.website.ai.editor-prototype":false,"ecom.website.ai.page-seo":false,"ecom.appointment-direct-booking":true,"ecom-service-cutover-fe-request-augmentations":true,"ecom.catalog.so-item-library-deprecation-3":true,"ecom.kiosk-photo-card":true,"ecom.website.system-page.cart":false,"ecom-enable-kiosk-large-catalog-layout":false,"ecom-hide-instagram":true,"ecom-hide-instagram-on-published-sites":false,"ecom-enable-kiosk-item-preloading":true,"ecom-brand-api-sync":true,"ecom.service-cutover.enable-tuba-traffic":true,"ecom-show-order-online":true,"websdk-use-new-afterpay-buttons":true,"ecom-checkout-should-check-is-decouple-checkout":true,"ecom-prime-use-store-info-v29":true,"ecom-checkout-force-pci-compliance":false,"ecom-website-hide-food-beverage-themes":false,"ecom-website-fix-dine-in-location-selection":true,"ecom-combo-slot-include-hidden-items":false},
+    });
+</script>
+<!--end-square-online-feature-flags-->
+
+    <script type="application/javascript" data-cookieconsent="ignore">
+        window.__BOOTSTRAP_STATE__ = {"siteData":{"site":{"id":"69f8ea10-a61b-11ea-8018-e16bef01aa06","properties":{"classicSiteID":"943656466888437854","catalogSiteId":"943656466888437854","selectedVertical":"other","verticalV4":"salon-barbershop","language":"en","squareMerchantId":"MQ2GGDBS5M9DC","siteCatalogVersion":"a95bd7cd-376b-47ab-bb93-0b2e14fc5cc8","appSiteCartNativePayControlGroup":false,"appSiteCartNativePayTestGroup":false,"isKioskSite":false,"squareSyncUserId":"a8802168-5668-4f9e-bc54-2a2c6b1eac02","isServiceCutoverEnabled":true,"skippedItemSync":false,"migratedSquareOnlineSiteToMenus":false,"onboarded":{"guidance":{"version":"1","complete":true,"welcomeComplete":true,"templateSwitcher":false,"instagramMiniSiteTipDismissed":true,"ostEditSitePreviewTipDismissed":false,"guidanceMobileTrafficDismissedCount":3},"onboardingComplete":true,"onboardingProgress":{"step":0,"type":null},"isSiteDesignOnboarded":true,"isVideoBannerAnnouncementDismissed":true,"isCustomizationDiscoverabilityDismissed":true},"publishedAt":1777679231,"completedFtux":{"APPOINTMENTS_SET_UP":true,"INSTAGRAM_FEATURE_EXPLAINED":true},"site_versions":{"editor":{"v0":"69f97dc0-a61b-11ea-b233-0dbf62d0d989","v1":"577748f0-b558-11ec-965b-2f237f0aea8f","v2":"577da220-b558-11ec-a7fa-7f1fb97cfa21","v3":"5782f500-b558-11ec-b9e0-0b2a3c8d687b","v4":"578d8ee0-b558-11ec-9d01-99f82e3a81f4","v5":"57928fc0-b558-11ec-a595-39552d89eeb3","v6":"6d214900-cae3-11ef-8436-af7abf16e58a","v7":"6d2ba6b0-cae3-11ef-a97b-81c0b1d683fd","v8":"6d326270-cae3-11ef-b215-4bcfd13902a8"}},"websiteNotices":{"siteSettingsTrial":true},"siteIconSettings":{"updatedAt":1745842827,"splash_images":{"config":{"size":"2048","radius":0,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"Essex Barbershop","customColor":"#000000","primaryColor":"#000000","contrastColor":"#ffffff"},"2048x4435":"\/uploads\/b\/69f8ea10-a61b-11ea-8018-e16bef01aa06\/splash_2048x4435_NzI4NT.jpg"},"ios_icon_images":{"config":{"size":"180","radius":0,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"Essex Barbershop","customColor":"#000000","primaryColor":"#000000","contrastColor":"#ffffff"},"180x180":"\/uploads\/b\/69f8ea10-a61b-11ea-8018-e16bef01aa06\/icon_180x180_ios_NjYxNj.png"},"android_icon_images":{"config":{"size":"512","radius":256,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"Essex Barbershop","customColor":"#000000","primaryColor":"#000000","contrastColor":"#ffffff"},"512x512":"\/uploads\/b\/69f8ea10-a61b-11ea-8018-e16bef01aa06\/icon_512x512_android_NDk0Nj.png"}},"selectedDeviceView":"mobile","show_appointments_guide":true,"domain":{"custom_domain":"www.essexbarbershop.com","subdomain":"615499624718508363.square.site","site_id":943656466888437854}}},"pagesMeta":[{"id":"128aa7f0-45b8-11f1-b335-c791da479cf5","name":"Home","route":"home","title":"Home","featureType":null,"description":"","hidden":false},{"id":"128afe00-45b8-11f1-81ba-19b5c8cfaed2","name":"Services","route":"services","title":"Services","featureType":null,"description":"","hidden":false}],"customPagesMeta":[],"artifactsMeta":[],"snapshot":{"id":"128a16a0-45b8-11f1-b614-6707f826a7d3","site_id":"69f8ea10-a61b-11ea-8018-e16bef01aa06","properties":{"seo":{"page":{"128aa7f0-45b8-11f1-b335-c791da479cf5":{"title":"Home","description":"philly barber philadelphia barbershop fade cut men's cut haircut clean modern near you"}}},"logo":"","color":{"primaryColor":"#000000","secondaryColors":[]},"title":"Essex Barbershop","shapes":{"cardBorderRadius":"0px","imageBorderRadius":"16px","buttonBorderRadius":"0px","defaultBorderRadius":"0px"},"social":[{"icon":"email","user":"","selected":false},{"icon":"facebook","user":"essexbarbershop","selected":true},{"icon":"instagram","user":"essexbarbershop215","selected":true},{"icon":"linkedin","user":"","selected":false},{"icon":"pinterest","user":"","selected":false},{"icon":"snapchat","user":"","selected":false},{"icon":"tiktok","user":"","selected":false},{"icon":"twitter","user":"","selected":false},{"icon":"vimeo","user":"","selected":false},{"icon":"yelp","user":"","selected":false},{"icon":"youtube","user":"","selected":false}],"fontset":{"name":"sqmarket","version":"0.1.0","overrides":{}},"homePage":"128aa7f0-45b8-11f1-b335-c791da479cf5","homepage":{"type":"page","typeID":"128aa7f0-45b8-11f1-b335-c791da479cf5"},"routeMap":{"":"128aa7f0-45b8-11f1-b335-c791da479cf5","home":"128aa7f0-45b8-11f1-b335-c791da479cf5","services":"128afe00-45b8-11f1-81ba-19b5c8cfaed2"},"styleset":{"name":"square","version":"0.1.0"},"framework":{"name":"birdseye","version":"0.1.0"},"onboarded":false,"openGraph":{"page":{"128aa7f0-45b8-11f1-b335-c791da479cf5":{"title":"Home","description":"philly barber philadelphia barbershop fade cut men's cut haircut clean modern "}}},"blocksMeta":{"0a17a091-e536-11ef-82b1-c533733d5639":"dEoyqY","6a1efbe0-a61b-11ea-b373-35e606956f53":"cYyvXZ","6a24fb00-a61b-11ea-b1d7-b1c994478cd7":"XSyxcP","6a250a80-a61b-11ea-bf4e-8f29b61c8864":"GUXLra","6a251740-a61b-11ea-a208-c1d48779718a":"IofQmy","6a2520a0-a61b-11ea-b5c3-0f4b79dff185":"GKhfij","6a252e80-a61b-11ea-b6db-157d8d0bf4c5":"RxbscA","6d6736b1-a61b-11ea-9e88-5785ff03cb6f":"yIpbag","833bbec1-a61b-11ea-9e88-5785ff03cb6f":"MOyQXt","aa697ff3-a61b-11ea-9e88-5785ff03cb6f":"eFfzjG","ab246b81-a61b-11ea-9e88-5785ff03cb6f":"rQlAuT"},"navigation":[{"link":{"page":{"pageID":"128aa7f0-45b8-11f1-b335-c791da479cf5"}},"type":"page"},{"link":{"category":"6DPR6LWZ2NFN2VZYKKMR53KO"},"type":"category","expanded":false,"auto_link":true}],"buttonstyle":"squared","customCodes":[{"name":"Google Tag manager - Head","isHead":true,"content":"<!-- Google tag (gtag.js) -->\n<script async src=\"https:\/\/www.googletagmanager.com\/gtag\/js?id=AW-16854130122\"><\/script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'AW-16854130122');\n<\/script>"}],"customFonts":[],"featuresets":["retail","instagramFeed"],"contentAreas":{"cart":{"id":"6a251ef0-a61b-11ea-8c09-431d275da555","hidden":false,"content":{"id":"6a2520a0-a61b-11ea-b5c3-0f4b79dff185","type":"block","layout":"cart-1","purpose":"cart@^1.1.0","elements":[{"id":"6a252350-a61b-11ea-9bfe-0d8476936ab4","purpose":"title","properties":{}},{"id":"6a2524f0-a61b-11ea-ae78-7b1b2e9f6f6f","purpose":"button","properties":{}},{"id":"6a252680-a61b-11ea-9c37-dd0b3dbca1c2","purpose":"text","properties":{}},{"id":"6a252840-a61b-11ea-9d38-b39b80f14770","purpose":"image","properties":{}},{"id":"6a252a00-a61b-11ea-83ce-4bcacae2a1f5","purpose":"close","properties":{}}],"properties":{"shortID":"GKhfij"}}},"footer":{"id":"6a24f7b0-a61b-11ea-b77b-c583869eb4cd","hidden":false,"content":{"id":"6a24fb00-a61b-11ea-b1d7-b1c994478cd7","type":"block","layout":"footer-6","purpose":"footer@^1.1.0","elements":[{"id":"6a24fe70-a61b-11ea-adb0-e9a5a08fcd86","purpose":"logo","properties":{}},{"id":"6a250040-a61b-11ea-8442-1b677a577c83","purpose":"text","properties":{}},{"id":"6a250200-a61b-11ea-9e2b-71769fa02683","purpose":"social","properties":{}},{"id":"6a2503b0-a61b-11ea-b046-934e3296020f","purpose":"newsletter","properties":{"type":"subscription","fields":[{"id":"6a250720-a61b-11ea-bbbd-2fabce3c1e3e","type":"action-input","label":"","required":true,"properties":{},"instructions":""}],"schema":{"id":"6c5810a0-a61b-11ea-81c6-cbb243d4082a","hash":"c9557ff6d73b06303c17a76b57b0c4fd"}}}],"properties":{"shortID":"XSyxcP","background":{"type":"color","color":{"value":"--primary-color"}}}},"properties":{"styles":{"minHeight":"100px"}}},"header":{"id":"6a2508e0-a61b-11ea-aa20-b7218e086fb9","hidden":false,"content":{"id":"6a250a80-a61b-11ea-bf4e-8f29b61c8864","type":"block","layout":"header-3","purpose":"header@^1.1.0","elements":[{"id":"6ad34560-a61b-11ea-9e88-5785ff03cb6f","purpose":"logo","properties":{"fontSize":"medium"}},{"id":"6ad34561-a61b-11ea-9e88-5785ff03cb6f","purpose":"social","properties":{}},{"id":"6ad34562-a61b-11ea-9e88-5785ff03cb6f","purpose":"navigation","properties":{"hidden":true,"uppercase":false}},{"id":"6ad34563-a61b-11ea-9e88-5785ff03cb6f","purpose":"hamburger","properties":{}},{"id":"6ad34564-a61b-11ea-9e88-5785ff03cb6f","purpose":"cart","properties":{"hidden":true}}],"properties":{"shortID":"GUXLra","textAlign":"","background":{"type":"color","color":{"value":"--gray-dark","isDark":true}},"actionButton":{"link":{"tab":false,"link":{"squareAppointment":{"categoryId":"6DPR6LWZ2NFN2VZYKKMR53KO","locationId":"11ef90c16203730cb4e33cecef6db0ec"}},"type":"squareAppointment"},"label":"Book now","hidden":false,"presetColor":"--secondary-bright-dark","presetStyle":"secondary"},"disableSearch":true}},"properties":{"styles":{"minHeight":"80px"}}},"navMobile":{"id":"6a251590-a61b-11ea-83af-d71855d75882","hidden":false,"content":{"id":"6a251740-a61b-11ea-a208-c1d48779718a","type":"block","layout":"navigation-mobile","purpose":"nav-mobile@^1.1.0","elements":[{"id":"6a251a00-a61b-11ea-917f-53f9406aaa25","purpose":"navigation","properties":{}},{"id":"6a251ba0-a61b-11ea-90fe-cbe58a7beebd","purpose":"close","properties":{}},{"id":"6a251d60-a61b-11ea-ab65-dded584bdc26","purpose":"social","properties":{}}],"properties":{"shortID":"IofQmy"}}},"freeFooter":{"id":"6a252c60-a61b-11ea-bd40-7905ffd13dca","hidden":false,"content":{"id":"6a252e80-a61b-11ea-b6db-157d8d0bf4c5","type":"block","layout":"free-footer-1","purpose":"free-footer@^1.0.0","elements":[],"properties":{"shortID":"RxbscA","background":{}}}}},"homePageType":"page","pageOverrides":{"product":{},"shopAll":{},"category":{},"leaveReview":{},"orderOnline":{},"instagramFeed":{},"searchResults":{}},"pageTemplates":{"product":"128b7190-45b8-11f1-b756-d5ee2161a56b","shopAll":"128bef80-45b8-11f1-a97a-bd26ca805af3","category":"128bef80-45b8-11f1-a97a-bd26ca805af3","leaveReview":"128bb740-45b8-11f1-85d3-852d751208b8","orderOnline":"128c2d20-45b8-11f1-8e4e-919770a58a39","instagramFeed":"128c5b00-45b8-11f1-87e0-3ba87a8d48a2","searchResults":"128bef80-45b8-11f1-a97a-bd26ca805af3"}},"version":8},"user":{"id":132539495,"properties":{"isSquareSyncUser":true,"country":"US"}},"billingFeatures":{"billingFeatures":{"embed_restricted_widgets":false,"com_gifting":true,"com_authorizenet_payment":false,"com_digital_products":true,"com_coupons":true,"com_product_reviews":false,"com_product_limit":-1,"popup_announcement":true,"popup_coupons":true,"popup_lead_capture":true,"community_support":true,"free_ssl_security":true,"custom_domain_connection":true,"advanced_site_stats":true,"password_protection":false,"video_backgrounds":true,"hd_video_and_audio":true,"membership_registration":true,"membership_settings":true,"online_store":true,"accept_paypal_payments":true,"product_badges":true,"product_modifiers":true,"in_store_pickup":true,"shipping_calculator":true,"chat_and_email_support":true,"phone_support":true,"priority_support":true,"advanced_ecommerce_stats":true,"seo":true,"unlimited_storage":true,"members":-1,"abandoned_cart_emails":false,"integrated_shipping_labels":true,"tax_calculator":true,"no_weebly_ads":true,"site_search":true,"product_search":true,"square_gift_cards":true,"inventory_management":true,"integrated_facebook_ads":true,"real_time_shipping_calculator":false,"age_confirmation":true,"square_processing_rate_id":"ECOM_SOS_PROFESSIONAL","square_processing_rate_display":{"USD":[{"percent":"3.3","flat":30,"type":"all"}],"AUD":[{"percent":"2.2","flat":0,"type":"all"}],"CAD":[{"percent":"2.8","flat":30,"type":"all"}],"EUR":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.9","flat":25,"type":"non-eu"}],"GBP":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.5","flat":25,"type":"non-eu"}],"JPY":[{"percent":"3.6","flat":0,"type":"non-jcb"},{"percent":"3.6","flat":0,"type":"jcb"}]},"favicon_customization":true,"site_code_customization":false,"instagram_feed_tagging":true,"quick_shop":true,"scheduleEnabled":false,"smartGroupsEnabled":false,"socialAdsEnabled":true,"lifetimeEmails":2,"emailsPerMonth":2,"recipientsPerEmail":500,"recipientsPerMonth":1000,"automations":0,"automatedRecipientsPerMonth":0,"enabledLeadFormTypes":["popup"],"allowsPurchasingCredits":false,"insights_overview":false,"insights_sales":false,"insights_products":true,"custom_fonts":true,"com_shipping_settings":true,"com_manage_gift_cards":true,"com_create_shipping_label_discount":true,"customer_accounts":true,"com_stripe_payment":false,"com_product_sync":true,"com_product_variant_limit":-1,"com_shipping_labels_tier":"weebly_cpp_tier","com_transaction_fee":"0.00","form_file_upload":true,"product_scheduled_actions":false,"custom_site_icon":true,"video_uploading":0,"buyer_customer_accounts":false,"personalized_order_screen":true,"personalized_recommendations":true,"easy_reordering":true,"self_serve_ordering":false,"ecom_preorders":false,"order_text_alerts":false,"time_based_categories":true,"advanced_order_limits":false,"modifier_images":false,"free_fulfillment_meter":false,"spd_fees_amount":0,"twenty_four_seven_support":false,"advanced_design_controls":false,"order_item_quantity_limit":false,"stock_media":false,"so_buyer_subscriptions":false,"item_badge_customization":false,"shop_all_item_layouts":false,"icon_sets":false,"banner_slides":false,"priority_phone_support":false,"pdp_layouts":false,"full_height_banners":false,"scrolling_text":false,"featured_item_layouts":false,"mega_menu":false,"appts_customization":false,"premium_text_image_layout":false,"featured_category_layouts":false,"ai_generated_content":false,"image_shapes":false,"group_ordering":false,"inventory_bundles":false,"com_square_transaction_best_discount":false},"isTrial":false},"siteFeatures":{"embed_restricted_widgets":false,"com_gifting":true,"com_authorizenet_payment":false,"com_digital_products":true,"com_coupons":true,"com_product_reviews":false,"com_product_limit":-1,"popup_announcement":true,"popup_coupons":true,"popup_lead_capture":true,"community_support":true,"free_ssl_security":true,"custom_domain_connection":true,"advanced_site_stats":true,"password_protection":false,"video_backgrounds":true,"hd_video_and_audio":true,"membership_registration":true,"membership_settings":true,"online_store":true,"accept_paypal_payments":true,"product_badges":true,"product_modifiers":true,"in_store_pickup":true,"shipping_calculator":true,"chat_and_email_support":true,"phone_support":true,"priority_support":true,"advanced_ecommerce_stats":true,"seo":true,"unlimited_storage":true,"members":-1,"abandoned_cart_emails":false,"integrated_shipping_labels":true,"tax_calculator":true,"no_weebly_ads":true,"site_search":true,"product_search":true,"square_gift_cards":true,"inventory_management":true,"integrated_facebook_ads":true,"real_time_shipping_calculator":false,"age_confirmation":true,"square_processing_rate_id":"ECOM_SOS_PROFESSIONAL","square_processing_rate_display":{"USD":[{"percent":"3.3","flat":30,"type":"all"}],"AUD":[{"percent":"2.2","flat":0,"type":"all"}],"CAD":[{"percent":"2.8","flat":30,"type":"all"}],"EUR":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.9","flat":25,"type":"non-eu"}],"GBP":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.5","flat":25,"type":"non-eu"}],"JPY":[{"percent":"3.6","flat":0,"type":"non-jcb"},{"percent":"3.6","flat":0,"type":"jcb"}]},"favicon_customization":true,"site_code_customization":false,"instagram_feed_tagging":true,"quick_shop":true,"scheduleEnabled":false,"smartGroupsEnabled":false,"socialAdsEnabled":true,"lifetimeEmails":2,"emailsPerMonth":2,"recipientsPerEmail":500,"recipientsPerMonth":1000,"automations":0,"automatedRecipientsPerMonth":0,"enabledLeadFormTypes":["popup"],"allowsPurchasingCredits":false,"insights_overview":false,"insights_sales":false,"insights_products":true,"custom_fonts":true,"com_shipping_settings":true,"com_manage_gift_cards":true,"com_create_shipping_label_discount":true,"customer_accounts":true,"com_stripe_payment":false,"com_product_sync":true,"com_product_variant_limit":-1,"com_shipping_labels_tier":"weebly_cpp_tier","com_transaction_fee":"0.00","form_file_upload":true,"product_scheduled_actions":false,"custom_site_icon":true,"video_uploading":0,"buyer_customer_accounts":false,"personalized_order_screen":true,"personalized_recommendations":true,"easy_reordering":true,"self_serve_ordering":false,"ecom_preorders":false,"order_text_alerts":false,"time_based_categories":true,"advanced_order_limits":false,"modifier_images":false,"free_fulfillment_meter":false,"spd_fees_amount":0,"twenty_four_seven_support":false,"advanced_design_controls":false,"order_item_quantity_limit":false,"stock_media":false,"so_buyer_subscriptions":false,"item_badge_customization":false,"shop_all_item_layouts":false,"icon_sets":false,"banner_slides":false,"priority_phone_support":false,"pdp_layouts":false,"full_height_banners":false,"scrolling_text":false,"featured_item_layouts":false,"mega_menu":false,"appts_customization":false,"premium_text_image_layout":false,"featured_category_layouts":false,"ai_generated_content":false,"image_shapes":false,"group_ordering":false,"inventory_bundles":false,"com_square_transaction_best_discount":false},"featureset":{"pages":["category","shopAll","instagramFeed"],"quickShop":true,"search":true,"blocks":["featured-products"]},"page":{"id":"128aa7f0-45b8-11f1-b335-c791da479cf5","site_snapshot_id":"128a16a0-45b8-11f1-b614-6707f826a7d3","properties":{"name":"Home","route":"home","title":"Home","description":"","contentAreas":{"banner":{"id":"6a1ef870-a61b-11ea-aedd-97d847a49ba6","hidden":false,"content":{"id":"6a1efbe0-a61b-11ea-b373-35e606956f53","type":"block","layout":"banner-8","purpose":"banner@^1.2.2","elements":[{"id":"6ad36c70-a61b-11ea-9e88-5785ff03cb6f","purpose":"title-1","properties":{"tag":"h1","color":"var(--color-white)","label":"Affordable unique products just right for you","title":{"quill":{"ops":[{"insert":"Cuts"},{"insert":"\n","attributes":{"block":true}},{"insert":"Confidence"},{"insert":"\n","attributes":{"block":true}},{"insert":"Value"},{"insert":"\n\n","attributes":{"block":true}}]}},"hidden":true,"fontSize":"step-3","textStyle":"title"}},{"id":"6ad36c71-a61b-11ea-9e88-5785ff03cb6f","purpose":"image-1","properties":{}},{"id":"6ad36c72-a61b-11ea-9e88-5785ff03cb6f","purpose":"button-1","properties":{"link":{"tab":false,"link":{"shopAll":true,"squareAppointment":{"categoryId":"6DPR6LWZ2NFN2VZYKKMR53KO","locationId":"11ef90c16203730cb4e33cecef6db0ec"}},"type":"squareAppointment"},"label":"Book now","hidden":false}}],"properties":{"text":{"hidden":true},"label":{"hidden":true},"height":"medium","shortID":"cYyvXZ","textAlign":"","background":{"type":"image","image":{"width":1448,"height":1086,"isDark":true,"source":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-05-01_19-40-01_1777678820.png","original":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/shop1_1777678791.png","imageType":"background","sourceSet":{"400w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-05-01_19-40-01_1777678820.png?width=400","800w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-05-01_19-40-01_1777678820.png?width=800","1200w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-05-01_19-40-01_1777678820.png?width=1200","1600w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-05-01_19-40-01_1777678820.png?width=1600","2000w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-05-01_19-40-01_1777678820.png?width=2000","2400w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-05-01_19-40-01_1777678820.png?width=2400"},"focalPoint":{"x":0.5,"y":0.5},"attribution":{},"cropOptions":{"zoom":1,"center":{"x":0.5,"y":0.5},"realZoom":1,"rotation":0},"positionPoint":{"x":0.5,"y":0.5},"overlayOpacity":0.13},"imageMobile":{"width":1448,"height":1086,"isDark":true,"source":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/shop1_1777678791.png","original":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/shop1_1777678791.png","sourceSet":{},"attribution":{}}},"bannerImage":{},"colorProfile":"custom-profile","verticalsHidden":true}}},"userContent":{"id":"6a1ef3b0-a61b-11ea-9d83-41987835869b","hidden":false,"content":{"id":"6a1ef670-a61b-11ea-82ee-119421643de3","type":"container","cells":[{"id":"833bbec0-a61b-11ea-9e88-5785ff03cb6f","type":"cell","content":{"id":"833bbec1-a61b-11ea-9e88-5785ff03cb6f","type":"block","layout":"instagram-grid","purpose":"instagram@^1.0.0","elements":[{"id":"834ef8a0-a61b-11ea-81c6-cbb243d4082a","purpose":"title","properties":{}},{"id":"834ef8a1-a61b-11ea-81c6-cbb243d4082a","purpose":"subtitle","properties":{}}],"properties":{"shortID":"MOyQXt","rowCount":3,"textAlign":"","columnCount":4,"seeMoreButton":{},"verticalsHidden":true,"profileConnection":{"id":"6c791e58-3e68-4ed5-90c0-1e6de0114716","type":"instagrambasicdisplay","username":"essexbarbershop215","connected":true,"updatedAt":"2025-03-17 20:31:29","displayUsername":"@essexbarbershop215","checkedConnectionTime":1742243493693}}}},{"id":"0a17a090-e536-11ef-82b1-c533733d5639","type":"cell","content":{"id":"0a17a091-e536-11ef-82b1-c533733d5639","type":"block","layout":"gallery-1","purpose":"gallery@^1.1.2","elements":[{"id":"0a327b90-e536-11ef-b067-65887719a8c4","purpose":"image-gallery","properties":{"shape":null,"images":[{"id":"d2e1bcf0-41c8-11f1-aa77-89fc3fc1d151","name":"Riad.png","width":1086,"height":1448,"source":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/Riad_1777246615.png","altText":"","caption":"Riad","original":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/Riad_1777246615.png","sourceSet":{},"focalPoint":{"x":0.5,"y":0.5},"attribution":{},"cropOptions":null,"positionPoint":{"x":0.5,"y":0.5}},{"id":"e0ed2aa0-41c8-11f1-aa77-89fc3fc1d151","name":"Taoufik.png","width":1086,"height":1448,"source":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/Taoufik_1777246640.png","altText":"","caption":"Taoufik","original":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/Taoufik_1777246640.png","sourceSet":{},"focalPoint":{"x":0.5,"y":0.5},"attribution":{},"cropOptions":null,"positionPoint":{"x":0.5,"y":0.5}},{"id":"eb201910-41c8-11f1-aa77-89fc3fc1d151","alt":"T","name":"T.png","width":1086,"height":1448,"source":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/T_1777246658.png","altText":"","caption":"T","original":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/T_1777246658.png","sourceSet":{},"focalPoint":{"x":0.5,"y":0.5},"attribution":{},"cropOptions":null,"positionPoint":{"x":0.5,"y":0.5}},{"id":"fb05ec10-41c8-11f1-aa77-89fc3fc1d151","alt":"Lou","name":"Lou.png","width":1086,"height":1448,"source":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/Lou_1777246685.png","altText":"","caption":"Lou","original":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/Lou_1777246685.png","sourceSet":{},"focalPoint":{"x":0.5,"y":0.5},"attribution":{},"cropOptions":null,"positionPoint":{"x":0.5,"y":0.4988}},{"id":"3afd0db0-446e-11f1-8ec3-fb7b7699650c","name":"eafb7fe1-a531-4235-982...13e.png","width":1086,"height":1448,"source":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-04-30_04-27-39_1777537703.png","caption":"Kevin","original":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/eafb7fe1-a531-4235-9822-6fa4a3ccc13e_1777537562.png","sourceSet":{"400w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-04-30_04-27-39_1777537703.png?width=400","800w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-04-30_04-27-39_1777537703.png?width=800","1200w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-04-30_04-27-39_1777537703.png?width=1200","1600w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-04-30_04-27-39_1777537703.png?width=1600","2000w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-04-30_04-27-39_1777537703.png?width=2000","2400w":"\/uploads\/b\/5093378cc63f44069292472dfe49ce1d828df775b444df3d24d94e955b4f86d6\/2026-04-30_04-27-39_1777537703.png?width=2400"},"focalPoint":{"x":0.5,"y":0.5},"cropOptions":{"zoom":1,"center":{"x":0.4814,"y":0.5424},"realZoom":1.09,"rotation":0},"positionPoint":{"x":0.5,"y":0.5013}}],"columns":4,"lightbox":true,"aspectRatio":"3_4","captionEnabled":true,"captionPosition":"hover"}}],"properties":{"title":{"title":{"quill":{"ops":[{"insert":"Meet our Barbers\n"}]}},"hidden":false,"fontSize":"step-1","textStyle":"body"},"shortID":"dEoyqY","subtitle":{"hidden":true},"textAlign":"","background":{"type":"color","color":{"value":"--gray-dark","isDark":true},"gradient":{"type":"linear","angle":180,"colors":[{"color":"--color-white","position":0},{"color":"--primary-color","position":100}]}},"colorProfile":""}}},{"id":"6d6736b0-a61b-11ea-9e88-5785ff03cb6f","type":"cell","content":{"id":"6d6736b1-a61b-11ea-9e88-5785ff03cb6f","type":"block","layout":"location-hours-side-by-side","purpose":"location-hours@^1.0.0","properties":{"shortID":"yIpbag","mapConfig":{"scale":70,"theme":"standard","location":{"lat":"37.77531","lng":"-122.41743","city":"San Francisco","region":"CA","street":"Market Street","street2":"","postal_code":"94103","country_code":"","formatted_address":"Square Inc, Market Street, San Francisco, CA 94103"}},"background":{"type":"color","color":{"value":"--gray-dark","isDark":true},"gradient":{"type":"linear","angle":180,"colors":[{"color":"--color-white","position":0},{"color":"--primary-color","position":100}]}},"hoursConfig":{"content":{"quill":{"ops":[{"insert":"Monday   9:00am - 5:00pm","attributes":{}},{"insert":"Tuesday   9:00am - 5:00pm","attributes":{}},{"insert":"Wednesday   9:00am - 5:00pm","attributes":{}},{"insert":"Thursday   9:00am - 5:00pm","attributes":{}},{"insert":"Friday   9:00am - 5:00pm","attributes":{}},{"insert":"Saturday   9:00am - 5:00pm","attributes":{}},{"insert":"Sunday   Closed","attributes":{}}]}}},"titleConfig":{"content":"Location & Hours","fontSize":"medium"},"detailsConfig":{"content":{"quill":{"ops":[{"insert":"Square Inc","attributes":{}},{"insert":"Market Street","attributes":{}},{"insert":"San Francisco, CA 94103","attributes":{}},{"insert":"(555) 555-5555\n","attributes":{"wLink":{"tab":false,"link":{"phone":"(555) 555-5555"},"type":"phone"}}},{"insert":"hi@mystore.com\n","attributes":{"wLink":{"tab":false,"link":{"email":"hi@mystore.com"},"type":"email"}}}]}},"displayEmail":true,"displayPhone":true,"displayAddress":true,"displayStoreName":true},"syncedLocation":{"locationId":"11ef90c16200d8b8b4e33cecef6db0ec"},"actionButtonConfig":{"presetSize":"large"}}}}]}}}}}},"storeInfo":{"merchant_id":"MQ2GGDBS5M9DC","buyer_customer_accounts_enabled":false,"currency":"USD","locale":"en_US","language":"en","syncing_disabled":true,"return_policy":null,"shipping_policy":null,"max_donation_amount":5000,"store_mode":"cart","payment_method_support":{"visa":true,"mastercard":true,"amex":true,"discover":true,"jcb":true,"interac":false,"paypal":false,"apple_pay":true,"google_pay":true,"cash_app":true,"square_pay":true},"show_pdp_buy_now_button":true,"allowed_to_sell":true,"accepting_orders":false,"has_payment_processor":true,"is_group_ordering_enabled":false,"product_reviews_enabled":false,"show_on_sale_section":true,"show_low_stock_section":true,"show_out_of_stock_section":true,"shipping_location_ids":["QZN48TVTZDH9T"],"fulfillment_support":{"delivery":false,"pickup":false,"shipping":true,"dine_in":false,"manual":false,"digital":false},"seller_preferred_fulfillment":"delivery","locations_counts":{"pickup":0,"delivery":0,"dine_in":0,"pickup_or_delivery":0,"brick_and_mortar_fulfillment":0,"shipping":0,"total":0},"has_subscribable_items":false,"has_shippable_product":false,"has_time_based_categories":false,"product_setting_low_stock_threshold":5,"category_hierarchy_root_ids":{"site_category_id":null,"id":null}},"commerceLinks":{"products":{},"categories":{"6DPR6LWZ2NFN2VZYKKMR53KO":{"site_category_id":"6DPR6LWZ2NFN2VZYKKMR53KO","name":"Service","updated_date":"2025-08-13T22:48:07+00:00","permalink":"","site_link":"\/shop\/service\/6DPR6LWZ2NFN2VZYKKMR53KO"},"ORODGNGC7NFI5EPK3OIXMQB5":{"site_category_id":"ORODGNGC7NFI5EPK3OIXMQB5","name":"Merch","updated_date":"2025-08-13T22:48:07+00:00","permalink":"","site_link":"\/shop\/merch\/ORODGNGC7NFI5EPK3OIXMQB5"},"YH5C7SOF7BCC5BOIOZ5UPOQW":{"site_category_id":"YH5C7SOF7BCC5BOIOZ5UPOQW","name":"L3vel 3","updated_date":"2025-08-13T22:48:07+00:00","permalink":"","site_link":"\/shop\/l3vel-3\/YH5C7SOF7BCC5BOIOZ5UPOQW"},"LSMVU46OHOJ7BICRTCZAN3H2":{"site_category_id":"LSMVU46OHOJ7BICRTCZAN3H2","name":"Suavecito","updated_date":"2025-08-13T22:48:07+00:00","permalink":"","site_link":"\/shop\/suavecito\/LSMVU46OHOJ7BICRTCZAN3H2"},"47EOIJYJZHVOKSGOZYORCP2L":{"site_category_id":"47EOIJYJZHVOKSGOZYORCP2L","name":"ShinerGold","updated_date":"2025-08-13T22:48:07+00:00","permalink":"","site_link":"\/shop\/shinergold\/47EOIJYJZHVOKSGOZYORCP2L"}},"meta":{"pagination":{"products":[],"categories":{"per_page":2500,"current_page":1,"total_pages":1}}}},"autoNavLinks":[{"link":{"page":{"pageID":"128aa7f0-45b8-11f1-b335-c791da479cf5"}},"type":"page"},{"link":{"category":"6DPR6LWZ2NFN2VZYKKMR53KO"},"type":"category","expanded":false,"auto_link":true}],"blogPostLinks":{},"featureFlags":{"ecom.website.deprecated-layouts":false,"marketing-enable-drive-repeat-purchase-campaign":true,"ecom.website.facebook-food":true,"ecom.website.theme-export":false,"ecom.website.chamber-via-fastly":true,"ecom.square-online-published-catalog-cache-version":"2026-03-25","ecom.checkout.open_tabs":true,"ecom.website.photo-reviews":true,"ecom.checkout.cmi-sentry-integration":true,"ecom.checkout.cmi.bootstrap-tracking-snowplow":true,"ecom.checkout.cmi.bootstrap-tracking-ga":true,"ecom.website.order-confirmation-page.website-redirect":true,"ecom.checkout.cmi.locale-view-splitting":true,"ecom.checkout.open_tabs_gc_coupon":true,"ecom.cmi-cart":true,"ecom.checkout.cmi.theme-fonts":false,"ecom-fulfillment-api-v-2":false,"ecom.omnichannel-discounts-frontend":true,"ecom.omnichannel-discounts-category-api":false,"ecom-improved-tipping-experience":true,"ecom.splash.loyalty":true,"ecom.website.published-site.datadog-rum":true,"ecom.website.editor.datadog-rum":true,"ecom-website-published-site-datadog-rum-bot-filter":true,"ecom-use-tracking-inventory":false,"ecom.image-controls.width-fix":true,"ecom.gradient-backgrounds":true,"ecom.website.form-fraud-blocking":true,"ecom.website.form-fraud-auto-ban":true,"ecom.website.code-editor":false,"ecom.shopping.pdp-layouts-m1":true,"ecom.chamber.subscriptions":true,"ecom.tuba.subscriptions-paid-shipping-rates":true,"ecom-cko-enhanced-logging":true,"ecom-cko-unified-logging":true,"ecom.shopping.so-coupons-sunset-integrations":true,"ecom.order-online-text-layouts":true,"ecom.appointment-improvements":true,"ecom.appointment-improvements-m2":true,"ecom.tuba.committed-inventory-m1":true,"ecom.splash-improvements":true,"ecom-themes-onboarding":true,"ecom.shopping.featured-categories-paid-layouts":true,"ecom.website.ai-text.short-form":true,"ecom.website.ai-text.long-form":true,"ecom.website.metered-request.override":false,"ecom.website.async-create-theme":false,"ecom.can_use_cart_sharing":true,"ecom.website.ai.editor-prototype":false,"ecom.website.ai.page-seo":false,"ecom.appointment-direct-booking":true,"ecom-service-cutover-fe-request-augmentations":true,"ecom.catalog.so-item-library-deprecation-3":true,"ecom.kiosk-photo-card":true,"ecom.website.system-page.cart":false,"ecom-enable-kiosk-large-catalog-layout":false,"ecom-hide-instagram":true,"ecom-hide-instagram-on-published-sites":false,"ecom-enable-kiosk-item-preloading":true,"ecom-brand-api-sync":true,"ecom.service-cutover.enable-tuba-traffic":true,"ecom-show-order-online":true,"websdk-use-new-afterpay-buttons":true,"ecom-checkout-should-check-is-decouple-checkout":true,"ecom-prime-use-store-info-v29":true,"ecom-checkout-force-pci-compliance":false,"ecom-website-hide-food-beverage-themes":false,"ecom-website-fix-dine-in-location-selection":true,"ecom-combo-slot-include-hidden-items":false},"lightning":{},"datadog":{"publishedSite":{"service":"spi-ecom-square-online-buyer-journey","applicationId":"0a9b10e6-9671-4e1d-bd0b-2f283f0d29ee","clientToken":"pubc6e7a7143c494f34f1366112ef7c1e2c","env":"production","rum":{"sampleRate":50,"sessionReplaySampleRate":20,"traceSampleRate":10}}}};
+    </script>
+
+        
+    <script type="application/javascript" data-cookieconsent="ignore">
+        window.stopSiteLoadingAnimation = () => {
+            const loadingElement = document.querySelector('.loading-view');
+            loadingElement?.remove();
+        };
+    </script>
+
+    
+    <script type="application/javascript" data-cookieconsent="ignore">
+    /**
+     * PCI Compliance Flag
+     *
+     * This flag indicates if scripts have been filtered for PCI compliance (OpenTabs SSO Checkout route).
+     * This value is set only for buyer dashboard/site view to prevent infinite loading loops.
+     *
+     * Do NOT include this file in editor-frame.blade.php as it affects seller dashboard.
+     */
+    window.IS_PCI_SCRIPTS_FILTERED = false;
+</script>
+    <script type="application/javascript" data-cookieconsent="ignore">
+    // used for editor-frame and pub site bootstrap
+    window.APP_ENV = 'production';
+    window.APP_ORIGIN = 'https://square.online';
+    window.APP_URL = 'https://www.weebly.com';
+    window.ASSET_BASE = '/app/website';
+    window.ASSETS_PUBLIC_PATH = 'https://cdn3.editmysite.com/app/website/';
+    window.CMS_API_PATH ='/app/website/cms';
+    window.DEPRECATED_IMAGE_HOST = 'https://images.editor.website';
+    window.FRAME_ORIGIN = 'https://sandbox.square.online';
+    window.GENERATE_GOOGLE_MAP_BASE = 'https://www.editmysite.com';
+    window.IMAGE_HOST = 'https://5093378cc63f44069292.cdn6.editmysite.com';
+    window.IS_DRAFT = false;
+    window.IS_MAGIC_MIRROR = false;
+    window.IS_THEME_PREVIEW = false;
+    window.IS_ENHANCED_PREVIEW = false;
+    window.DRAFT_ORIGIN = 'https://drafts.editmysite.com';
+    window.PUBLISHED_CMS_API_PREFIX = '/app/cms';
+    window.SENTRY_DSN = 'https://13e49d785d8d4f828038b6136f3b48ba@sentry.io/1263158';
+    window.RELEASE = 'prime-8423403';
+    window.URL_BASE = '';
+    window.XSRF_COOKIE_NAME = 'publishedsite-xsrf';
+    window.FASTLY_URL_BASE = 'https://cdn5.editmysite.com';
+    window.SQUARE_WEB_PAYMENTS_SDK = 'https://web.squarecdn.com/v1/square.js'
+    window.PUBLIC_SQUARE_URL_BASE = 'squareup.com';
+    window.PUBLIC_SQUARE_APPTS_URL_BASE = 'app.squareup.com';
+    window.ENABLE_FRONTEND_LOCAL_DEV_CACHE = '';
+    window.GOOGLE_TAG_DEVELOPER_ID = 'developer_id.dOTM2Yj';
+    window.IS_SQUARE_GO = false;
+
+            window.IS_PUBLISHED_MAGIC_MIRROR = false;
+    
+    // state
+    window.SUBDOMAIN_BASE = 'square.site';
+
+</script>
+
+    <!--square-online-snowplow-->
+
+<script data-cookieconsent="statistics">
+    (function (p, l, o, w, i, n, g) {
+    var id = i + '-script';
+    if (!l.getElementById(i)) {
+        n = l.createElement(o);
+        g = l.getElementsByTagName(o)[0];
+        n.id = id;
+        n.async = 1;
+        n.src = w;
+        g.parentNode.insertBefore(n, g);
+    }
+})(window, document, "script", "https://cdn3.editmysite.com/app/website/static/js/wsnbn/snowday262.js", "snowday");
+</script>
+
+
+<script data-cookieconsent="ignore" data-role="square-online-snowplow">
+
+(function (p, l, o, w, i, n, g) {
+    if (!p[i]) {
+        p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
+        p.GlobalSnowplowNamespace.push(i);
+        p[i] = function () {
+            (p[i].q = p[i].q || []).push(arguments);
+        };
+        p[i].q = p[i].q || [];
+    }
+})(window, document, '', '', "snowday");
+
+var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+var snPlObR = function(arr) {
+    var s = '';
+    for (var i = 0 ; i < arr.length ; i++){
+        s = s + String.fromCharCode(arr[i]);
+    }
+    return s;
+};
+var s = snPlObR(r);
+
+var regEx = new RegExp(s);
+
+window._W = {
+    Analytics: {
+        trackers: {
+            wSP: snowday,
+        },
+        user_id: '132539495',
+        site_id: '943656466888437854',
+    },
+};
+
+(function(app_id, ec_hostname, discover_root_domain) {
+    var track = window._W.Analytics.trackers.wSP;
+    if (!track) return;
+    track('newTracker', app_id, ec_hostname, {
+        appId: app_id,
+        post: true,
+        platform: 'web',
+        discoverRootDomain: discover_root_domain,
+        cookieDomain: document.location.hostname,
+        cookieName: '_snow_',
+        contexts: {
+            webPage: true,
+            performanceTiming: true,
+            gaCookies: true
+        },
+        crossDomainLinker: function (linkElement) {
+            return regEx.test(linkElement.href);
+        },
+        respectDoNotTrack: document.cookie.indexOf('gdpr-kb') === -1
+    });
+    track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id);
+    track('crossDomainLinker', function (linkElement) {
+        return regEx.test(linkElement.href);
+    });
+})(
+    '_wn',
+    'ec.editmysite.com',
+    true
+);
+</script>
+<!--end-square-online-snowplow-->
+
+
+                                        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16854130122"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16854130122');
+</script>
+                    
+        
+
+    
+    <link rel="stylesheet" href="https://cdn3.editmysite.com/app/website/css/site.80dde82e64cd7e8a0309.css">
+</head>
+<body>
+    <div class="loading-view">
+        <div
+            class="loading-container"
+        >
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+        </div>
+    </div>
+    <div id="app"></div>
+
+                                    
+        <link rel="stylesheet" type="text/css" href="https://cdn3.editmysite.com/app/checkout/assets/checkout/css/wcko.d01e607a0316a2da0559.css" />
+    </body>
+</html>
