@@ -52,21 +52,13 @@ a {
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 20px;
   padding: 14px clamp(18px, 5vw, 72px);
   background: rgba(251, 247, 244, 0.6);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
   box-shadow: 0 10px 34px rgba(60, 38, 38, 0.08);
-}
-
-.brand img {
-  display: block;
-  width: 58px;
-  height: 58px;
-  object-fit: contain;
-  box-shadow: 0 4px 12px rgba(60, 38, 38, 0.15);
 }
 
 .nav {
@@ -128,6 +120,20 @@ a {
   border-radius: 50%;
   background: rgba(232, 180, 184, 0.32);
   filter: blur(80px);
+}
+
+.hero-logo {
+  position: absolute;
+  top: clamp(28px, 5vh, 48px);
+  right: clamp(20px, 5vw, 72px);
+  z-index: 1;
+  width: clamp(190px, 22vw, 300px);
+  height: auto;
+  opacity: 0.48;
+}
+
+.hero .eyebrow {
+  display: none;
 }
 
 .hero-copy {
@@ -724,11 +730,6 @@ address {
     padding: 12px 18px 14px;
   }
 
-  .brand img {
-    width: 50px;
-    height: 50px;
-  }
-
   .nav {
     width: 100%;
     justify-content: flex-start;
@@ -756,7 +757,11 @@ address {
     padding: 92px 18px 34px;
     background:
       linear-gradient(180deg, rgba(25, 23, 22, 0.18), rgba(25, 23, 22, 0.84)),
-      url("assets/tila-hero.jpeg") center top / cover no-repeat;
+      url("assets/tila-hero.jpeg") right 42% / auto 150% no-repeat;
+  }
+
+  .hero-logo {
+    display: none;
   }
 
   h1 {
@@ -795,8 +800,38 @@ address {
     grid-template-columns: 1fr;
   }
 
+  .gallery {
+    display: flex;
+    gap: 14px;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .gallery img {
+    flex: 0 0 100%;
     height: 360px;
+    scroll-snap-align: center;
+  }
+
+  .gallery img:not(:first-of-type) {
+    display: none;
+  }
+
+  .gallery.show-more {
+    overflow-x: auto;
+  }
+
+  .gallery.show-more img {
+    display: block;
+  }
+
+  .gallery-actions {
+    width: calc(100% - 36px);
+  }
+
+  .gallery-actions .button {
+    width: 100%;
   }
 
   .contact-panel {
@@ -823,4 +858,128 @@ address {
   .footer {
     font-size: 0.92rem;
   }
+}
+
+body.mobile-preview {
+  max-width: 430px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  box-shadow: 0 0 0 1px var(--line), 0 28px 90px rgba(25, 23, 22, 0.18);
+  zoom: 1;
+}
+
+body.mobile-preview .site-header,
+body.mobile-preview .intro,
+body.mobile-preview .contact,
+body.mobile-preview .footer {
+  align-items: flex-start;
+  grid-template-columns: 1fr;
+  flex-direction: column;
+}
+
+body.mobile-preview .site-header {
+  position: static;
+  gap: 14px;
+  padding: 12px 18px 14px;
+}
+
+body.mobile-preview .nav {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+body.mobile-preview .nav a {
+  min-height: 40px;
+  flex: 1 1 calc(50% - 8px);
+  justify-content: center;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+body.mobile-preview .nav .nav-button {
+  flex: 1 1 100%;
+  margin-top: 2px;
+}
+
+body.mobile-preview .hero {
+  min-height: 72vh;
+  align-items: flex-end;
+  padding: 92px 18px 34px;
+  background:
+    linear-gradient(180deg, rgba(25, 23, 22, 0.18), rgba(25, 23, 22, 0.84)),
+    url("assets/tila-hero.jpeg") right 42% / auto 150% no-repeat;
+}
+
+body.mobile-preview .hero-logo {
+  display: none;
+}
+
+body.mobile-preview h1 {
+  font-size: clamp(2.65rem, 13vw, 4.3rem);
+}
+
+body.mobile-preview h2 {
+  font-size: clamp(2rem, 10vw, 3rem);
+}
+
+body.mobile-preview .intro,
+body.mobile-preview .section {
+  padding: 58px 18px;
+}
+
+body.mobile-preview .actions,
+body.mobile-preview .service-controls {
+  flex-direction: column;
+}
+
+body.mobile-preview .button,
+body.mobile-preview .hero .button {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+body.mobile-preview .staff-grid,
+body.mobile-preview .service-grid,
+body.mobile-preview .gallery {
+  grid-template-columns: 1fr;
+}
+
+body.mobile-preview .gallery {
+  display: flex;
+  gap: 14px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+body.mobile-preview .gallery img {
+  flex: 0 0 100%;
+  height: 300px;
+  scroll-snap-align: center;
+}
+
+body.mobile-preview .gallery img:not(:first-of-type) {
+  display: none;
+}
+
+body.mobile-preview .gallery.show-more {
+  overflow-x: auto;
+}
+
+body.mobile-preview .gallery.show-more img {
+  display: block;
+}
+
+body.mobile-preview .gallery-actions {
+  width: calc(100% - 36px);
+}
+
+body.mobile-preview .gallery-actions .button,
+body.mobile-preview .contact-panel {
+  width: 100%;
 }
