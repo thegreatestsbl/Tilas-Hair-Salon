@@ -12,9 +12,6 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Tila's Hair Salon home">
-        <img src="assets/tila-logo.png" alt="Tila's Hair Salon logo">
-      </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#staff">Staff</a>
@@ -28,6 +25,7 @@
 
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-logo" src="assets/tila-logo-transparent.png" alt="Tila's Hair Salon">
         <div class="hero-copy">
           <p class="eyebrow">Tila's Hair Salon LLC</p>
           <h1 id="hero-title">Healthy blondes. Natural balayage. Beautiful blowouts.</h1>
@@ -149,7 +147,7 @@
         <img class="extra-photo" src="gallery/DSC04216_1727319797.webp" alt="Hair styling session">
         <img class="extra-photo" src="gallery/IMG_7700_1727140200.webp" alt="Salon hair color work">
         <div class="gallery-actions">
-          <button class="button soft" id="galleryToggleButton" type="button">See more photos</button>
+          <button class="button soft" id="galleryToggleButton" type="button">See our gallery</button>
         </div>
       </section>
 
@@ -192,6 +190,10 @@
       <span>Cash App / Apple Pay / Google Pay / Visa / Mastercard / American Express / Discover / JCB</span>
     </footer>
     <script>
+      if (new URLSearchParams(window.location.search).get("preview")?.includes("mobile")) {
+        document.body.classList.add("mobile-preview");
+      }
+
       const allServicesButton = document.querySelector("#allServicesButton");
       const serviceList = document.querySelector("#serviceList");
       const galleryToggleButton = document.querySelector("#galleryToggleButton");
@@ -207,8 +209,11 @@
       galleryToggleButton.addEventListener("click", () => {
         gallery.classList.toggle("show-more");
         galleryToggleButton.textContent = gallery.classList.contains("show-more")
-          ? "See fewer photos"
-          : "See more photos";
+          ? "Close gallery"
+          : "See our gallery";
+        if (gallery.classList.contains("show-more")) {
+          gallery.scrollTo({ left: 0, behavior: "smooth" });
+        }
       });
 
       // Lightbox functionality
@@ -282,4 +287,3 @@
     </script>
   </body>
 </html>
-
